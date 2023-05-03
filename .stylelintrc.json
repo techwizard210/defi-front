@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "ignoreFiles": "./React/public/**",
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": null,
+    "selector-pseudo-element-colon-notation": null,
+    "no-descending-specificity": null
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "google-client-id": "499641535966-5n47l6gqih7aq43k1pv404hakvju4jth.apps.googleusercontent.com",
+  "client-secret": "8zZiuDGVR6wsxFYR3HrG6oxn",
+  "recaptcha_test_site_key": "6LcmEeQbAAAAAGHzxcWwn2khG8kMzBQDbgwO5U_j",
+  "recaptcha_test_secret_key": "6LcmEeQbAAAAAIIYHdvyKINiWFBTjvvPmMYWcTTs",
+  "recaptcha_staging_site_key": "6LcvEeQbAAAAAHnKx0P9-bqgUYS0_bqQKbL7lGKy",
+  "recaptcha_staging_secret_key": "6LcvEeQbAAAAABTRtTVg2KoFTMWag51b2cI85MpS",
+  "recaptcha_site_local_key": "6Lcbid8bAAAAAOkaFT_eqM3C300N8jnn-Bzrhv5_",
+  "recaptcha_secret_local_key": "6Lcbid8bAAAAAK9d25Z7UXTXpseJtSkYh6IFQYxq"
+}

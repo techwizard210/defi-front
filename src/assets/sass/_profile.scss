@@ -1,0 +1,851 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url('../fonts/ARCADE_I.TTF');
+}
+
+@use './_mixins.scss' as standardMixins;
+
+.socials {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins';
+
+  div {
+    font-family: 'Poppins';
+    padding: 10px;
+  }
+
+  .social-icon-link {
+    padding: 5px;
+  }
+}
+
+.profilePage {
+  flex-grow: 1;
+
+  &.nonMobilePadding {
+    padding: 50px;
+  }
+
+  .HifiSpan {
+    font-family: 'Poppins';
+    color: #ed51a3;
+    margin-left: 4px;
+  }
+
+  .mycustomtabs {
+    .MuiTab-wrapper {
+      text-transform: capitalize;
+    }
+
+    .MuiTabs-indicator {
+      background-color: #eee;
+    }
+  }
+
+  .newEarningsInfo {
+    padding: 15px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    border-radius: 12px;
+    border-color: #b8daff;
+    border: 1px solid #b8daff;
+
+    .newEarningsLink {
+      font-weight: 500;
+      font-family: 'Poppins';
+      color: #ff05af;
+    }
+  }
+
+  .profileOptions {
+    .profileOption {
+      font-size: 19px;
+      background: none;
+      border: none;
+      padding: 12px;
+      padding-left: 15px;
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+      cursor: pointer;
+      font-family: 'Poppins';
+      color: white;
+
+      &.selected {
+        background-color: #181a37;
+      }
+
+      svg {
+        float: right;
+        margin-top: 5px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .miningRewards {
+    background-color: rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    min-height: 650px;
+  }
+
+  .heading {
+    padding-left: 10px;
+    font-size: 36px;
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 200;
+
+    .completedFilter {
+      position: relative;
+
+      input {
+        margin-right: 10px;
+        top: 2px;
+        position: relative;
+      }
+
+      label {
+        font-family: 'Poppins';
+        font-weight: 200;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .profileSection {
+    padding: 10px;
+
+    .profileButton {
+      background-color: #5c5d68;
+      float: right;
+      margin-bottom: 10px;
+      margin-top: 8px;
+      margin-left: 4px;
+    }
+
+    .profilePictureSection {
+      text-align: center;
+    }
+
+    .profilePictureWrapper {
+      position: relative;
+      img {
+        cursor: pointer;
+        max-height: 170px;
+        max-width: 100%;
+      }
+
+      .invisibleFloatyDivvy {
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 40%;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .merits {
+      border: 2px solid #1fc7d4;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 10px;
+
+      div {
+        font-family: 'Poppins';
+      }
+      .tokenCount {
+        text-align: right;
+      }
+    }
+
+    .profileDetailsWrapper {
+      padding-left: 20px;
+
+      .userName {
+        input {
+          font-size: 35px;
+        }
+      }
+
+      .profileDetailRow {
+        margin-top: 10px;
+
+        .detailRowLabel {
+          font-family: 'Poppins';
+          color: #0ff;
+        }
+
+        .detailRowValue {
+          font-family: 'Poppins';
+
+          .chips {
+            .freeGamerChip {
+              background: #0080006b;
+              color: #00df00;
+            }
+
+            .hifiverChip {
+              color: gold;
+              background: #ffd70057;
+            }
+
+            .nftOwnerChip {
+              background-color: #4db5ff;
+              color: #00375e;
+            }
+
+            .scholarChip {
+              background: #ffa50061;
+              color: orange;
+            }
+
+            span {
+              font-family: 'Poppins';
+              font-weight: 600;
+              font-size: 10px;
+            }
+          }
+
+          div {
+            font-family: 'Poppins';
+          }
+        }
+      }
+    }
+  }
+
+  .missions {
+    padding: 10px;
+
+    font-family: Poppins, Aldrich !important;
+
+    &.leftPadding {
+      padding-left: 50px;
+    }
+
+    .dailyStatusSection {
+      padding-top: 15px;
+      font-family: Poppins, Aldrich !important;
+      margin-bottom: 10px;
+
+      .earningsPillWrapper {
+        text-align: center;
+        min-height: 42px;
+        margin: auto;
+
+        .earningsPill {
+          width: 250px;
+
+          .categoryName {
+            font-size: 17px;
+            font-family: 'Poppins';
+            border-right: 1px solid;
+            float: left;
+            padding: 6px;
+            border: 1px solid;
+            border-radius: 3px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+
+          .categoryValue {
+            float: left;
+            border: 1px solid;
+            border-radius: 3px;
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-size: 17px;
+            font-family: 'Poppins';
+            padding: 6px;
+
+            .earningsToken {
+              font-size: 16px;
+              padding-left: 10px;
+              padding-right: 10px;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+
+    .missionsSection {
+      .missionsWrapper {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        .noMoreMissions {
+          padding: 15px;
+          font-family: 'Poppins';
+          font-weight: 300;
+          border-radius: 12px;
+          color: #001226;
+          background-color: #7399c1;
+          border-color: #b8daff;
+        }
+
+        .mission {
+          background: rgb(217, 15, 168);
+          background: linear-gradient(
+            23deg,
+            rgba(217, 15, 168, 1) 10%,
+            rgba(74, 51, 128, 1) 45%,
+            rgba(19, 29, 117, 1) 100%
+          );
+          border: 1px solid white;
+          width: 100%;
+
+          &.completed {
+            background: linear-gradient(
+              23deg,
+              #2fb90d 10%,
+              rgba(74, 51, 128, 1) 45%,
+              #131d75 100%
+            );
+          }
+
+          .missionHeader {
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            position: relative;
+
+            .completedPill {
+              position: absolute;
+              right: 0;
+              margin: 8px;
+              background: #0080006b;
+              color: #00df00;
+
+              span {
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 10px;
+              }
+            }
+
+            .missionTypeChips {
+              width: 100%;
+              padding-top: 20px;
+              text-align: center;
+
+              .dailyMissionChip {
+                margin-right: 2px;
+                color: gold;
+                background: #ffd70057;
+              }
+
+              .journeyMissionChip {
+                margin-right: 2px;
+                background: #0080006b;
+                color: #00df00;
+              }
+
+              .singleMissionChip {
+                margin-right: 2px;
+                background-color: #4db5ff;
+                color: #00375e;
+              }
+
+              span {
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 10px;
+              }
+            }
+
+            .missionName {
+              top: 30%;
+              position: relative;
+              text-align: center;
+              font-size: 25px;
+              color: white;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-family: 'Poppins';
+              padding: 15px;
+            }
+          }
+
+          hr.headerExtender {
+            margin-top: 25px;
+          }
+
+          .missionSection {
+            margin-bottom: 15px;
+
+            .missionSummary {
+              color: white;
+              font-weight: 200;
+              font-family: 'Poppins';
+            }
+
+            .missionCriteria {
+              color: white;
+              font-weight: 600;
+              font-family: 'Poppins';
+              text-align: center;
+            }
+
+            &.rewardsSection {
+              font-family: 'Poppins';
+              text-align: center;
+
+              .missionReward {
+                margin-top: 9px;
+                color: gold;
+                font-weight: 400;
+                font-family: 'Poppins';
+                font-size: 24px;
+              }
+            }
+          }
+
+          .completedFooter {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background: #0080006b;
+            color: #00df00;
+            font-weight: 400;
+            font-family: 'Poppins';
+            font-size: 24px;
+          }
+        }
+
+        .missionRow {
+          border: 1px solid #595959;
+          padding: 15px;
+          cursor: pointer;
+          border-radius: 5px;
+
+          .missionImage {
+            width: 100%;
+          }
+
+          .missionName {
+            font-family: Poppins, Aldrich !important;
+            color: #fbd20f;
+          }
+
+          .missionProgress {
+            padding-top: 8px;
+
+            span {
+              font-size: 12px;
+              font-family: 'Poppins';
+            }
+
+            .container {
+              position: relative;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+
+            .Loading {
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              height: 2px;
+              background: #666666;
+              box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+              border-radius: 4px;
+              overflow: hidden;
+            }
+
+            .LoadingInner {
+              content: '';
+              position: absolute;
+              left: 2px;
+              border-radius: 4px;
+              background-color: #0ff;
+              box-shadow: 0px 0px 3px 3px #0ff;
+              top: 12px;
+            }
+          }
+        }
+
+        .missionDetails {
+          font-family: 'Poppins';
+          border: 1px solid #595959;
+          padding: 15px;
+          border-radius: 5px;
+
+          hr {
+            width: 50%;
+            margin-top: 20px;
+            border-bottom: 0.5px;
+          }
+
+          .detailHeading {
+            margin-top: 20px;
+            font-family: 'Poppins';
+            font-size: 27px;
+            border-bottom: 1px solid;
+            padding-bottom: 7px;
+          }
+
+          .questName {
+            padding-top: 4px;
+            span {
+              font-size: 28px;
+              font-family: 'Poppins';
+              font-weight: 600;
+            }
+          }
+
+          .questTypeWrapper {
+            text-align: right;
+
+            .questType {
+              font-size: 20px;
+              font-family: 'Poppins';
+              color: #fbd20f;
+            }
+
+            .questRepeat {
+              font-size: 17px;
+              font-family: 'Poppins';
+              margin-top: 7px;
+            }
+          }
+
+          .questDescRow {
+            font-family: 'Poppins';
+            margin-top: 24px;
+          }
+
+          .questCriteriaRow {
+            font-family: 'Poppins';
+            margin-top: 24px;
+            color: orange;
+          }
+
+          .questRewardRow {
+            font-family: 'Poppins';
+            margin-top: 24px;
+            color: #03cd03;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .earnings {
+    padding-top: 20px;
+
+    .earningsWrapper {
+      padding: 5px;
+      border-radius: 3px;
+
+      .comingSoonEarnings {
+        font-family: 'Poppins';
+        font-weight: 200;
+        color: white;
+      }
+
+      .noMoreMissions {
+        padding: 15px;
+        font-family: 'Poppins';
+        font-weight: 300;
+        border-radius: 12px;
+        color: #001226;
+        background-color: #7399c1;
+        border-color: #b8daff;
+      }
+
+      .headlinerWrapper {
+        margin-bottom: 10px;
+        background: #250fd9;
+        background: linear-gradient(
+          23deg,
+          #250fd9 10%,
+          #4a3380 45%,
+          #131d75 100%
+        );
+        border: 1px solid white;
+
+        .contentWrapper {
+          padding: 10px;
+
+          .title {
+            padding: 4px;
+            font-size: 20px;
+            color: #c1c1c1;
+            width: 100%;
+            min-height: 38px;
+          }
+
+          .total {
+            font-size: 40px;
+            text-align: center;
+            width: 100%;
+          }
+
+          .globalTokens {
+            font-family: 'Poppins';
+            font-weight: 200;
+            font-size: 12px;
+            width: 100%;
+            text-align: center;
+          }
+
+          .breakdownWrapper {
+            .totalSubStatWrapper {
+              padding: 5px;
+              .breakdownRow {
+                width: 100%;
+                padding: 5px;
+                text-align: center;
+
+                .breakdownTitle {
+                  font-family: 'Poppins';
+                  font-size: 20px;
+                  margin-bottom: 15px;
+                  font-weight: 300;
+                  position: relative;
+
+                  &:before {
+                    content: '';
+                    top: 30px;
+                    position: absolute;
+                    left: 25%;
+                    bottom: 0;
+                    height: 1px;
+                    width: 50%;
+                    border-bottom: 1px solid white;
+                    margin: auto;
+                  }
+                }
+
+                .value {
+                  font-family: 'Poppins';
+                  margin-bottom: 8px;
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .earningsSectionHeader {
+        padding: 20px;
+
+        span {
+          font-size: 29px;
+          font-family: 'Poppins';
+          font-weight: 600;
+        }
+      }
+      .rewardScrollerOverflow {
+        overflow-y: auto;
+        max-height: 400px;
+      }
+
+      .earningsItemWrapper {
+        border-radius: 12px;
+        margin-bottom: 5px;
+        border: 1px solid white;
+
+        .substatWrapper {
+          padding-bottom: 10px;
+
+          .dateRow {
+            font-family: 'Poppins';
+            color: white;
+
+            &.rewardsFor {
+              font-family: 'Poppins';
+              font-size: 20px;
+              margin-bottom: 7px;
+              height: 27px;
+              border-bottom: 1px solid;
+            }
+
+            &.substat {
+              font-size: 14px;
+              margin-top: 4px;
+            }
+
+            .title {
+              font-family: 'Poppins';
+              padding-right: 10px;
+              text-align: right;
+            }
+
+            .date {
+              font-family: 'Poppins';
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .notifications {
+    padding: 10px;
+
+    @include standardButton;
+
+    .deleteAll {
+      margin-left: 15px;
+    }
+
+    &.leftPadding {
+      padding-left: 50px;
+    }
+
+    .notificationList {
+      padding: 20px;
+
+      .noNotification {
+        font-family: Poppins, Aldrich;
+        font-weight: 200;
+      }
+
+      .connectWalletWarning {
+        padding: 15px;
+        font-family: 'Poppins';
+        font-weight: 300;
+        border-radius: 12px;
+        color: #001226;
+        background-color: #7399c1;
+        border-color: #b8daff;
+      }
+
+      .notification {
+        padding-top: 10px;
+        border-bottom: 1px solid;
+        padding-bottom: 15px;
+        div {
+          font-family: Poppins, Aldrich;
+          font-weight: 200;
+        }
+
+        .subject {
+          font-weight: 500;
+        }
+
+        .action {
+          text-align: right;
+
+          button {
+            margin-right: 2px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      button {
+        font-size: 10px;
+      }
+
+      .rdt_Pagination {
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        margin-top: 30px;
+
+        span,
+        select {
+          @include spacedText;
+        }
+        button {
+          background-color: transparent;
+          box-shadow: none;
+          color: white;
+          padding: 0px;
+          margin-right: 3px;
+
+          svg {
+            fill: white;
+          }
+        }
+      }
+
+      .rdt_Table {
+        background-color: transparent;
+
+        div {
+          background-color: transparent;
+        }
+
+        .noContracts {
+          font-size: 16px;
+          font-family: 'Poppins';
+          background-color: transparent;
+          color: white;
+          font-weight: 300;
+        }
+
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            background-color: transparent;
+            color: white;
+            .rdt_TableCol {
+              font-size: 10px;
+              .rdt_TableCol_Sortable {
+                div {
+                  @include spacedText;
+                }
+              }
+            }
+          }
+        }
+
+        .rdt_TableBody {
+          .rdt_TableRow {
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+
+            .rdt_TableCell {
+              @include spacedText;
+              font-size: 10px;
+              i {
+                margin-right: 5px;
+                font-size: 15px;
+              }
+
+              div {
+                @include spacedText;
+              }
+            }
+          }
+
+          .rdt_ExpanderRow {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profileModal {
+  .body {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  @include standardButton;
+}
+//#3f51b5

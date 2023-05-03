@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["React/src/*.{ts,tsx}"]
+  },
+  "rules": {
+    "no-submodule-imports": null
+  }
+}

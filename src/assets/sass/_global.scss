@@ -1,0 +1,35 @@
+body {
+  color: #fff;
+  margin: 0;
+  font-size: 0.13px;
+  font-family: 'Poppins', Aldrich;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #352460;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: #4d3b81;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #261845;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ed51a3;
+}
+
+#app-root {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+@media only screen and (orientation: portrait) {
+  #app-root {
+    overflow: hidden;
+  }
+}

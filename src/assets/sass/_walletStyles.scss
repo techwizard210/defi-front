@@ -1,0 +1,120 @@
+.walletWrapper {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #353547;
+  border-radius: 16px;
+  box-shadow: inset 0px -2px 0px black;
+  cursor: pointer;
+  display: inline-flex;
+  height: 32px;
+  padding-left: 40px;
+  padding-right: 8px;
+  position: relative;
+  color: white;
+
+  span {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 13px;
+    max-width: 75%;
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .avatarBubble {
+    left: -5px;
+    position: absolute;
+    top: -4px;
+    z-index: 102;
+    max-height: 40px;
+    max-width: 40px;
+    width: 100%;
+
+    .walletIcon {
+      padding: 9px;
+      background: #353547;
+      border-radius: 50%;
+      color: #1fc7d4;
+      border: 2px solid;
+      font-size: 38px;
+    }
+  }
+}
+
+.logoutIcon {
+  margin-left: 6px;
+}
+
+.connetWalletButton {
+  height: 32px;
+  padding: 0px 16px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  padding-top: 3px;
+  font-family: 'Poppins';
+
+  span {
+    font-family: 'Poppins';
+  }
+}
+
+@media (max-width: 500px) {
+  // .avatarBubble {
+  //   display: none;
+  // }
+
+  // .walletWrapper {
+  //   padding-left: 14px;
+  // }
+
+  .hifiWalletSection {
+    max-width: 60% !important;
+    flex-basis: 60% !important;
+  }
+
+  .hifiIcon {
+    max-width: 20% !important;
+    flex-basis: 20% !important;
+
+    img {
+      width: 39px;
+      padding-top: 11px;
+      position: absolute;
+      top: 0;
+      margin-top: 5px;
+      left: 0;
+    }
+  }
+
+  .mobileNav {
+    max-width: 20% !important;
+    flex-basis: 20% !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .avatarBubble {
+    display: none;
+  }
+
+  .walletWrapper {
+    padding-left: 14px;
+  }
+
+  .hifiWalletSection {
+    max-width: 80% !important;
+    flex-basis: 80% !important;
+  }
+
+  .hifiIcon {
+    display: none;
+  }
+
+  .mobileNav {
+    max-width: 20% !important;
+    flex-basis: 20% !important;
+  }
+}

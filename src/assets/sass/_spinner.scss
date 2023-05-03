@@ -1,0 +1,210 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url('../fonts/ARCADE_I.TTF');
+}
+
+.hifi-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .hifi-loading-circle {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .hifi-loading-circle.hifi-loading-circle--activate:after,
+  .hifi-loading-circle.hifi-loading-circle--activate:before {
+    opacity: 1;
+  }
+
+  .hifi-loading-circle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    animation: play-rotate 1.5s infinite linear;
+    border-radius: 50%;
+    border-left: 0.1875em solid #fff;
+    border-top: 0.1875em solid transparent;
+    border-bottom: 0.1875em solid transparent;
+    border-right: 0.1875em solid #fff;
+  }
+
+  .hifi-loading-circle:after {
+    border-right: 0.1875em solid transparent;
+    border-top: 0.1875em solid #90c534;
+    border-bottom: 0.1875em solid #90c534;
+    border-left: 0.1875em solid transparent;
+    animation: play-rotate-reverse 1.5s infinite linear;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .hifi-number {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    color: #778f9b;
+    position: relative;
+    text-align: center;
+    font-family: 'roboto-regular', fantasy;
+  }
+
+  .hifi-number span {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(1, 1);
+    -webkit-transform-origin: center;
+    -webkit-transform: translate(-50%, -50%) scale(1, 1);
+  }
+
+  .hifi-num3,
+  .hifi-num2,
+  .hifi-num1 {
+    color: #ff1643;
+  }
+
+  .hifi-num1 {
+    animation: time 3s infinite;
+    animation-delay: 2s;
+  }
+
+  .hifi-num2 {
+    animation: time 3s infinite;
+    animation-delay: 1s;
+  }
+
+  .hifi-num3 {
+    animation: time 3s infinite;
+    animation-delay: 0s;
+  }
+
+  // .hifi-num4 {
+  //   animation: time 8s infinite;
+  //   animation-delay: 2s;
+  // }
+
+  // .hifi-num5 {
+  //   animation: time 8s infinite;
+  //   animation-delay: 0s;
+  // }
+
+  // .hifi-num6 {
+  //   animation: time 10s infinite;
+  //   animation-delay: 4s;
+  // }
+
+  // .hifi-num7 {
+  //   animation: time 10s infinite;
+  //   animation-delay: 3s;
+  // }
+
+  // .hifi-num8 {
+  //   animation: time 10s infinite;
+  //   animation-delay: 2s;
+  // }
+
+  // .hifi-num9 {
+  //   animation: time 10s infinite;
+  //   animation-delay: 1s;
+  // }
+
+  // .hifi-num10 {
+  //   animation: time 10s infinite;
+  //   animation-delay: 0s;
+  // }
+
+  @-webkit-keyframes time {
+    0%,
+    10%,
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    5% {
+      opacity: 0.8;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+
+  @keyframes time {
+    0%,
+    10%,
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    5% {
+      opacity: 0.8;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+
+  @-webkit-keyframes play-rotate {
+    from {
+      -webkit-transform: rotate(0) scale(0.9);
+      transform: rotate(0) scale(0.9);
+    }
+
+    to {
+      -webkit-transform: rotate(360deg) scale(0.9);
+      transform: rotate(360deg) scale(0.9);
+    }
+  }
+
+  @keyframes play-rotate {
+    from {
+      -webkit-transform: rotate(0) scale(0.9);
+      transform: rotate(0) scale(0.9);
+    }
+
+    to {
+      -webkit-transform: rotate(360deg) scale(0.9);
+      transform: rotate(360deg) scale(0.9);
+    }
+  }
+
+  @-webkit-keyframes play-rotate-reverse {
+    from {
+      -webkit-transform: rotate(0) scale(0.8);
+      transform: rotate(0) scale(0.8);
+    }
+
+    to {
+      -webkit-transform: rotate(-360deg) scale(0.8);
+      transform: rotate(-360deg) scale(0.8);
+    }
+  }
+
+  @keyframes play-rotate-reverse {
+    from {
+      -webkit-transform: rotate(0) scale(0.8);
+      transform: rotate(0) scale(0.8);
+    }
+
+    to {
+      -webkit-transform: rotate(-360deg) scale(0.8);
+      transform: rotate(-360deg) scale(0.8);
+    }
+  }
+}

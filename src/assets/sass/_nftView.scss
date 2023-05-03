@@ -1,0 +1,471 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url('../fonts/ARCADE_I.TTF');
+}
+
+.nftView {
+  margin-top: 20px;
+  padding: 40px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+
+  &.mobile {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    .headerCard {
+      border: 1px solid white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+
+      .nftImg {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .nftInfoWrapper {
+        padding: 20px;
+        position: relative;
+        min-height: 200px;
+
+        .name {
+          padding-left: 10px;
+          font-size: 45px;
+          font-family: 'Poppins';
+          color: white;
+          font-weight: 600;
+        }
+
+        .infoBoxes {
+          position: relative;
+
+          .infoBox {
+            padding: 20px;
+            text-align: center;
+
+            .header {
+              border-bottom: 1px solid;
+              padding-bottom: 8px;
+              text-align: center;
+              position: relative;
+              margin-bottom: 5px;
+
+              .levelTrack {
+                position: absolute;
+                border: 1px solid;
+                border-radius: 6px;
+                padding: 1px;
+                padding-left: 2px;
+                padding-right: 2px;
+                right: 0;
+                top: -8px;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+
+            .info {
+              padding-left: 10px;
+              font-size: 20px;
+              font-family: 'Poppins';
+              color: white;
+              font-weight: 200;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .headerCard {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    .nftImg {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .nftInfoWrapper {
+      padding: 20px;
+      position: relative;
+      min-height: 200px;
+
+      .name {
+        padding-left: 10px;
+        font-size: 45px;
+        font-family: 'Poppins';
+        color: white;
+        font-weight: 600;
+      }
+
+      .info {
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: 'Poppins';
+        color: white;
+        font-weight: 300;
+        padding-bottom: 5px;
+
+        &.tier {
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: 20px;
+          font-family: 'Poppins';
+          color: #ff2ea0;
+          font-weight: 600;
+        }
+      }
+
+      .infoBoxes {
+        position: absolute;
+        bottom: 0;
+
+        .infoBox {
+          padding: 20px;
+          text-align: center;
+
+          .header {
+            border-bottom: 1px solid;
+            padding-bottom: 8px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 5px;
+            font-family: 'Poppins';
+            font-weight: 600;
+
+            .levelTrack {
+              position: absolute;
+              border: 1px solid;
+              border-radius: 6px;
+              padding: 1px;
+              padding-left: 2px;
+              padding-right: 2px;
+              right: 0;
+              top: -8px;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .info {
+            padding-left: 10px;
+            font-size: 20px;
+            font-family: 'Poppins';
+            color: white;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .propertiesCard {
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+
+    .propertiesWrapper {
+      text-align: left;
+      .prop {
+        padding: 5px;
+
+        .propSlot {
+          font-weight: 200;
+          font-size: 14px;
+          font-family: 'Poppins';
+        }
+        .propValue {
+          font-weight: 200;
+          font-size: 14px;
+          font-family: 'Poppins';
+
+          .propRarirty {
+            font-weight: 200;
+            font-size: 10px;
+            font-family: 'Poppins';
+          }
+        }
+      }
+    }
+  }
+
+  .stakingCard {
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+
+    .optionsWrapper {
+      padding-top: 20px;
+      .stakingOption {
+        padding: 13px;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+        .optionTitle {
+          text-align: left;
+          font-size: 20px;
+          font-family: 'Poppins';
+          color: #ff31c2;
+          font-weight: 500;
+        }
+
+        .detailsWrapper {
+          padding-top: 15px;
+
+          .detailHeader {
+            font-size: 13px;
+            font-family: 'Poppins';
+            font-weight: 300;
+
+            hr {
+              width: 50%;
+              border: 0;
+              border-bottom: 1px solid;
+              margin: auto;
+              padding-top: 4px;
+            }
+          }
+
+          .detailValue {
+            padding: 10px;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 20px;
+          }
+
+          .detailValue {
+            padding: 10px;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 20px;
+          }
+
+          .stakeButton {
+            padding: 6px 16px;
+            font-size: 0.8125rem;
+            min-width: 64px;
+            box-sizing: border-box;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-family: 'Poppins', Aldrich;
+            font-weight: 500;
+            line-height: 1.75;
+            border-radius: 4px;
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            margin: 5px;
+            display: inline-flex;
+            outline: 0;
+            position: relative;
+            align-items: center;
+            -webkit-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            justify-content: center;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+            box-shadow: 0 3px 1px -2px rgb(0, 0, 0 / 20%),
+              0 2px 2px 0 rgb(0, 0, 0 / 14%), 0 1px 5px 0 rgb(0, 0, 0 / 12%);
+
+            color: #fff;
+            background-color: #3f51b5;
+
+            &:hover {
+              box-shadow: 0 2px 4px -1px rgb(0, 0, 0 / 20%),
+                0 4px 5px 0 rgb(0, 0, 0 / 14%), 0 1px 10px 0 rgb(0, 0, 0 / 12%);
+              background-color: #d5d5d5;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.levelTrackModal {
+  .progressColumn {
+    .progressLight {
+      width: 3px;
+      height: 100%;
+      margin: auto;
+      background: #473871;
+      position: relative;
+
+      .progressBobble {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 34%;
+        left: -13px;
+      }
+
+      &.active {
+        background: #1fc7d4;
+
+        .progressBobble {
+          background: #1fc7d4;
+          border: 1px solid #352460;
+        }
+      }
+    }
+  }
+
+  .body {
+    .levelInfoColumn {
+      padding-left: 10px;
+      padding-bottom: 20px;
+
+      hr {
+        width: 50%;
+        margin: auto;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        border-bottom: none;
+      }
+
+      &.active {
+        .level {
+          color: #2feb2f;
+        }
+
+        .perks {
+          border-color: #2feb2f;
+        }
+      }
+
+      .level {
+        padding-left: 10px;
+        font-size: 32px;
+        font-family: 'Poppins';
+        color: white;
+        font-weight: 300;
+      }
+
+      .xpReq {
+        padding-left: 10px;
+        font-size: 17px;
+        font-family: 'Poppins';
+        color: white;
+        font-weight: 200;
+        padding-top: 3px;
+      }
+
+      .perks {
+        padding: 10px;
+        margin-top: 15px;
+        border: 1px solid;
+        border-radius: 10px;
+        font-size: 17px;
+        font-family: 'Poppins';
+        color: white;
+        font-weight: 400;
+
+        .perk {
+          .icon {
+            position: relative;
+            top: 5px;
+          }
+
+          .description {
+            padding-left: 10px;
+            font-size: 14px;
+            font-family: 'Poppins';
+            color: white;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+}
+
+.NFTStakingModal {
+  .title {
+    text-align: center;
+  }
+
+  .stakingOptionName {
+    text-align: center;
+    font-family: 'Poppins';
+  }
+
+  .lockedHiFiWrapper {
+    position: relative;
+    .lockedHiFiBlocker {
+      position: absolute;
+      background: black;
+      height: 100%;
+      width: 100%;
+      z-index: 150;
+      padding: 10px;
+      border-radius: 4px;
+
+      .lockedTitle {
+        text-align: center;
+        font-family: 'Poppins';
+        padding-top: 12px;
+      }
+      .lockedUntil {
+        text-align: center;
+        font-family: 'Poppins';
+        padding-top: 12px;
+        color: #f50057;
+      }
+    }
+  }
+
+  .stakingOptionVestingWarning {
+    padding: 10px;
+    background: #ff0000a1;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+
+  .withdraw {
+    p {
+      margin-left: 0;
+    }
+  }
+
+  .stakedAmount {
+    input {
+      cursor: pointer;
+    }
+  }
+}
+//#3f51b5

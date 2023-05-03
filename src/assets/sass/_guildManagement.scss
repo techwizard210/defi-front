@@ -1,0 +1,1203 @@
+@use './_mixins.scss' as standardMixins;
+
+.guildManagement,
+.guildView {
+  flex-grow: 1;
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+
+  &.mobile {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .MuiTab-wrapper {
+    @include spacedText;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  &.nonMobilePadding {
+    padding: 50px;
+  }
+
+  .HifiSpan {
+    font-family: 'Poppins';
+    color: #ed51a3;
+    margin-left: 4px;
+  }
+
+  .mycustomtabs {
+    .MuiTab-wrapper {
+      text-transform: capitalize;
+    }
+
+    .MuiTabs-indicator {
+      background-color: #eee;
+    }
+  }
+
+  .guildManagementOptions {
+    .managementOption {
+      font-size: 19px;
+      background: none;
+      border: none;
+      padding: 12px;
+      padding-left: 15px;
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+      cursor: pointer;
+      font-family: 'Poppins';
+      color: white;
+
+      &.selected {
+        background-color: #181a37;
+      }
+
+      svg {
+        float: right;
+        margin-top: 5px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .profileSection,
+  .settings {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+
+    div {
+      @include spacedText;
+    }
+
+    .profileButton {
+      background-color: #5c5d68;
+      float: right;
+      margin-bottom: 10px;
+      margin-top: 8px;
+      margin-left: 4px;
+    }
+
+    .profilePictureSection {
+      text-align: center;
+    }
+
+    .profilePictureWrapper {
+      position: relative;
+      img {
+        cursor: pointer;
+        max-height: 170px;
+        max-width: 100%;
+      }
+
+      .invisibleFloatyDivvy {
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 40%;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .profileDetailsWrapper {
+      padding-left: 20px;
+
+      .detailRowLabel {
+        font-family: 'Poppins';
+        color: #0ff;
+      }
+
+      .userRole {
+        span {
+          font-family: 'Poppins';
+
+          &.pendingJoinRequest {
+            font-size: 14px;
+          }
+
+          &.label {
+            font-size: 17px;
+            margin-right: 10px;
+          }
+
+          &.value {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .detailRowValue {
+        font-family: 'Poppins';
+        margin-bottom: 10px;
+
+        @include standardButton;
+
+        .userName {
+          font-size: 30px;
+          font-family: 'Poppins';
+          margin-bottom: 4px;
+        }
+
+        .guildInfoSection {
+          padding: 5px;
+          padding-top: 10px;
+
+          .infoIconWrapper {
+            font-size: 30px;
+            margin: auto;
+            margin-top: 12px;
+          }
+          .infoValueWrapper {
+            .infoTitle {
+              font-size: 12px;
+              font-family: 'Poppins';
+            }
+            .infoValue {
+              font-family: 'Poppins';
+              text-align: left;
+              padding-left: 20px;
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        div {
+          font-family: 'Poppins';
+        }
+      }
+    }
+
+    &.mobile {
+      padding: 5px;
+      width: 100%;
+
+      div {
+        font-size: 10px;
+      }
+
+      .userRole {
+        span {
+          font-family: 'Poppins';
+
+          &.pendingJoinRequest {
+            font-size: 10px;
+          }
+
+          &.label {
+            font-size: 13px;
+          }
+
+          &.value {
+            font-size: 19px;
+          }
+        }
+      }
+
+      .detailRowValue {
+        font-family: 'Poppins';
+        margin-bottom: 10px;
+
+        &.topMargin {
+          margin-top: 10px;
+        }
+
+        @include standardButton;
+
+        .userName {
+          font-size: 23px;
+          font-family: 'Poppins';
+          margin-bottom: 4px;
+        }
+
+        .guildInfoSection {
+          .infoIconWrapper {
+            font-size: 16px;
+            margin: auto;
+            margin-top: 10px;
+          }
+          .infoValueWrapper {
+            .infoTitle {
+              font-size: 9px;
+              font-family: 'Poppins';
+            }
+            .infoValue {
+              font-family: 'Poppins';
+              text-align: left;
+              padding-left: 20px;
+              font-size: 16px;
+              font-weight: 300;
+            }
+          }
+        }
+
+        div {
+          font-family: 'Poppins';
+        }
+      }
+    }
+  }
+
+  .nftSection {
+    .nftListWrapper {
+      padding: 10px;
+      max-height: 1000px;
+      overflow-y: auto;
+
+      .subHeading {
+        font-family: 'Poppins';
+        width: 50%;
+        padding-bottom: 8px;
+      }
+
+      .rdt_Pagination {
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        margin-top: 30px;
+
+        span,
+        select {
+          @include spacedText;
+        }
+        button {
+          background-color: transparent;
+          box-shadow: none;
+          color: white;
+          padding: 0px;
+          margin-right: 3px;
+
+          svg {
+            fill: white;
+          }
+        }
+      }
+
+      .rdt_Table {
+        background-color: transparent;
+
+        div {
+          background-color: transparent;
+        }
+
+        .noContracts {
+          font-size: 16px;
+          font-family: 'Poppins';
+          background-color: transparent;
+          color: white;
+          font-weight: 300;
+        }
+
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            background-color: transparent;
+            color: white;
+            .rdt_TableCol {
+              font-size: 10px;
+              .rdt_TableCol_Sortable {
+                div {
+                  @include spacedText;
+                }
+              }
+            }
+          }
+        }
+
+        .rdt_TableBody {
+          .rdt_TableRow {
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+
+            .rdt_TableCell {
+              @include spacedText;
+              font-size: 10px;
+              i {
+                margin-right: 5px;
+                font-size: 15px;
+              }
+
+              div {
+                @include spacedText;
+              }
+            }
+          }
+
+          .rdt_ExpanderRow {
+            color: white;
+          }
+        }
+      }
+
+      .nftItem {
+        border: 1px solid;
+        border-radius: 6px;
+        padding: 5px;
+        margin-bottom: 8px;
+
+        .nftInfoWrapper {
+          padding-left: 10px;
+          .nftName {
+            font-size: 30px;
+            font-family: 'Poppins';
+            font-weight: 600;
+          }
+
+          .ownedBy {
+            font-size: 30px;
+            font-family: 'Poppins';
+            font-weight: 600;
+          }
+
+          .nftActions {
+            text-align: right;
+          }
+
+          .nftInfoSection {
+            padding: 5px;
+            padding-top: 10px;
+
+            @include standardButton;
+
+            .infoIconWrapper {
+              font-size: 30px;
+              margin: auto;
+              margin-top: 12px;
+            }
+            .infoValueWrapper {
+              .infoTitle {
+                font-size: 12px;
+                font-family: 'Poppins';
+              }
+              .infoValue {
+                font-family: 'Poppins';
+                text-align: left;
+                padding-left: 20px;
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+      .scholarsWrapper {
+        padding: 10px;
+
+        @include standardButton;
+
+        .scholRow {
+          font-size: 16px;
+          font-weight: 200;
+          padding-top: 5px;
+          padding-bottom: 5px;
+
+          &.noScholars {
+            padding: 20px;
+          }
+
+          .value {
+            font-family: 'Poppins';
+          }
+        }
+
+        .scholTitleRow {
+          font-size: 18px;
+          font-weight: 400;
+          margin-top: 15px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+
+          .value {
+            font-family: 'Poppins';
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      .nftListWrapper {
+        .scholarsWrapper {
+          .scholRow {
+            font-size: 10px;
+
+            .value {
+              button {
+                font-size: 10px;
+              }
+            }
+          }
+          .scholTitleRow {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .notifications {
+    padding: 10px;
+
+    .deleteAllWrapper {
+      width: 100%;
+      text-align: right;
+
+      .deleteAll {
+        margin-right: 18px;
+      }
+    }
+
+    @include standardButton;
+
+    &.leftPadding {
+      padding-left: 50px;
+    }
+
+    .notificationList {
+      padding: 20px;
+      max-height: 1000px;
+      overflow-y: auto;
+
+      .noNotification {
+        @include spacedText;
+
+        font-family: Poppins, Aldrich;
+        font-weight: 200;
+      }
+
+      .connectWalletWarning {
+        padding: 15px;
+        font-family: 'Poppins';
+        font-weight: 300;
+        border-radius: 12px;
+        color: #001226;
+        background-color: #7399c1;
+        border-color: #b8daff;
+      }
+
+      .notification {
+        padding-top: 10px;
+        border-bottom: 1px solid;
+        padding-bottom: 15px;
+        div {
+          font-family: Poppins, Aldrich;
+          font-weight: 200;
+
+          @include spacedText;
+        }
+
+        .subject {
+          font-weight: 500;
+        }
+
+        .action {
+          text-align: right;
+
+          button {
+            margin-right: 2px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      button {
+        font-size: 10px;
+      }
+
+      .rdt_Pagination {
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        margin-top: 30px;
+
+        span,
+        select {
+          @include spacedText;
+        }
+        button {
+          background-color: transparent;
+          box-shadow: none;
+          color: white;
+          padding: 0px;
+          margin-right: 3px;
+
+          svg {
+            fill: white;
+          }
+        }
+      }
+
+      .rdt_Table {
+        background-color: transparent;
+
+        div {
+          background-color: transparent;
+        }
+
+        .noContracts {
+          font-size: 16px;
+          font-family: 'Poppins';
+          background-color: transparent;
+          color: white;
+          font-weight: 300;
+        }
+
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            background-color: transparent;
+            color: white;
+            .rdt_TableCol {
+              font-size: 10px;
+              .rdt_TableCol_Sortable {
+                div {
+                  @include spacedText;
+                }
+              }
+            }
+          }
+        }
+
+        .rdt_TableBody {
+          .rdt_TableRow {
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+
+            .rdt_TableCell {
+              @include spacedText;
+              font-size: 10px;
+              i {
+                margin-right: 5px;
+                font-size: 15px;
+              }
+
+              div {
+                @include spacedText;
+              }
+            }
+          }
+
+          .rdt_ExpanderRow {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .members,
+  .scholars {
+    padding-top: 20px;
+
+    @include standardButton;
+
+    .subHeading {
+      font-size: 20px;
+
+      padding-left: 10px;
+      margin-bottom: 20px;
+
+      div {
+        @include spacedText;
+        font-weight: 300;
+      }
+
+      button {
+        float: right;
+      }
+    }
+
+    .pendingInvitesList {
+      padding: 10px;
+      .titleRowWrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+
+        .titleRow {
+          @include spacedText;
+          font-weight: 300;
+          font-size: 12px;
+
+          .image,
+          .name,
+          .role,
+          .nftCount,
+          .colheading {
+            @include spacedText;
+          }
+        }
+      }
+
+      .noPendingInvites {
+        @include spacedText;
+        font-weight: 300;
+        padding: 17px;
+      }
+
+      .inviteListWrapper {
+        background: black;
+        padding: 12px;
+        .inviteWrapper {
+          padding: 10px;
+          border-bottom: 1px solid;
+
+          @include spacedText;
+          font-weight: 300;
+          font-size: 12px;
+
+          .name,
+          .role,
+          .nftCount,
+          .scholarSlots {
+            @include spacedText;
+            font-weight: 200;
+          }
+
+          .actions {
+            button {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .membersList {
+      padding: 10px;
+      .titleRowWrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+
+        .titleRow {
+          @include spacedText;
+          font-weight: 300;
+          font-size: 17px;
+
+          .image,
+          .name,
+          .role,
+          .nftCount,
+          .scholarSlots,
+          .colheading {
+            @include spacedText;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .colheading {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .memberListWrapper {
+        .memberWrapper {
+          padding: 5px;
+
+          @include spacedText;
+          font-weight: 300;
+
+          .memberCard {
+            width: 100%;
+            background: linear-gradient(
+              rgb(56, 67, 171) 0%,
+              rgb(29, 37, 122) 100%
+            );
+            margin-top: 2px;
+            box-shadow: rgb(0, 0, 0 / 70%) 0px 12px 12px;
+            border-radius: 8px;
+            color: white;
+
+            .memberInfo {
+              @include spacedText;
+              font-weight: 200;
+              font-size: 17px;
+              padding: 7px;
+              padding-left: 12px;
+
+              .image,
+              .name,
+              .role,
+              .nftCount,
+              .scholarSlots {
+                @include spacedText;
+                font-weight: 200;
+              }
+            }
+          }
+        }
+      }
+
+      .rdt_Pagination {
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        margin-top: 30px;
+
+        span,
+        select {
+          @include spacedText;
+        }
+        button {
+          background-color: transparent;
+          box-shadow: none;
+          color: white;
+          padding: 0px;
+          margin-right: 3px;
+
+          svg {
+            fill: white;
+          }
+        }
+      }
+
+      .rdt_Table {
+        background-color: transparent;
+
+        div {
+          background-color: transparent;
+        }
+
+        .noContracts {
+          font-size: 16px;
+          font-family: 'Poppins';
+          background-color: transparent;
+          color: white;
+          font-weight: 300;
+        }
+
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            background-color: transparent;
+            color: white;
+            .rdt_TableCol {
+              font-size: 10px;
+              .rdt_TableCol_Sortable {
+                div {
+                  @include spacedText;
+                }
+              }
+            }
+          }
+        }
+
+        .rdt_TableBody {
+          .rdt_TableRow {
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+
+            .rdt_TableCell {
+              @include spacedText;
+              font-size: 10px;
+              i {
+                margin-right: 5px;
+                font-size: 15px;
+              }
+
+              div {
+                @include spacedText;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      button {
+        font-size: 9px;
+        min-width: 0;
+        font-weight: 200;
+      }
+
+      .pendingInvitesList {
+        padding: 10px;
+        .titleRowWrapper {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid;
+
+          .titleRow {
+            @include spacedText;
+            font-weight: 300;
+            font-size: 10px;
+
+            .image,
+            .name,
+            .role,
+            .nftCount,
+            .colheading {
+              @include spacedText;
+            }
+          }
+        }
+
+        .noPendingInvites {
+          @include spacedText;
+          font-weight: 300;
+          padding: 17px;
+        }
+
+        .inviteListWrapper {
+          background: black;
+          padding: 10;
+          .inviteWrapper {
+            padding: 10px;
+            border-bottom: 1px solid;
+
+            @include spacedText;
+            font-weight: 300;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .membersList {
+        padding: 10px;
+        .titleRowWrapper {
+          .titleRow {
+            @include spacedText;
+            font-weight: 300;
+            font-size: 10px;
+
+            .colheading {
+              font-size: 10px;
+            }
+          }
+        }
+
+        .memberListWrapper {
+          .memberWrapper {
+            padding: 5px;
+
+            @include spacedText;
+            font-weight: 300;
+
+            .memberCard {
+              .memberInfo {
+                @include spacedText;
+                font-weight: 200;
+                font-size: 10px;
+                padding: 7px;
+                padding-left: 12px;
+
+                .image,
+                .name,
+                .role,
+                .nftCount,
+                .scholarSlots {
+                  @include spacedText;
+                  font-weight: 200;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dashboard {
+    padding: 10px;
+
+    .headlineFiguresSection {
+      .headlinersWrapper {
+        .headliner {
+          padding: 10px;
+
+          .headlinerWrapper {
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 3px;
+
+            .title {
+              @include spacedText;
+              font-size: 20px;
+              font-weight: 500;
+            }
+
+            .value {
+              @include spacedText;
+              font-size: 35px;
+              padding-top: 10px;
+              text-align: center;
+              font-weight: 600;
+            }
+
+            .description {
+              @include spacedText;
+              font-size: 10px;
+              padding-top: 10px;
+              text-align: center;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.guildManagementModal {
+  .notificationRecord {
+    .text {
+      font-family: 'Poppins';
+    }
+
+    .actions {
+      text-align: right;
+
+      @include standardButton;
+
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @include standardButton;
+
+  .body {
+    font-family: 'Poppins';
+  }
+
+  &.terminateModal {
+    .terminateMessage {
+      font-family: 'Poppins';
+      font-weight: 200;
+      line-height: 1.75;
+
+      span.playerName {
+        font-weight: 400;
+        font-family: 'Poppins';
+      }
+    }
+  }
+
+  &.scholOfferModal {
+    .offerDetails {
+      p {
+        @include spacedText;
+        font-weight: 300;
+        padding-bottom: 10px;
+        text-align: center;
+
+        li {
+          @include spacedText;
+        }
+      }
+    }
+    .actions {
+      text-align: center;
+      button {
+        margin-right: 4px;
+      }
+    }
+
+    .offerNotActive {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      @include spacedText;
+      font-weight: 100;
+    }
+  }
+
+  &.guildInviteModal {
+    .notificationRecord {
+      .text {
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+
+    .inviteNotActive {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      font-weight: 100;
+      @include spacedText;
+    }
+
+    .actions {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+
+  &.assignScholarModal {
+    .scholarHireOptions {
+      text-align: center;
+
+      button {
+        border-radius: 0;
+        box-shadow: none;
+
+        &.selected {
+          background-color: #0c143c;
+        }
+      }
+    }
+
+    .hireOptionPanel {
+      padding-top: 30px;
+
+      &.scholarList {
+        .scholarRecord {
+          .name {
+            @include spacedText;
+            padding: 5px;
+          }
+          .actions {
+            text-align: right;
+          }
+        }
+      }
+
+      .headerRow {
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+        margin-bottom: 10px;
+
+        div {
+          @include spacedText;
+        }
+      }
+
+      .scholarRecord {
+        div {
+          @include spacedText;
+          font-weight: 200;
+        }
+      }
+
+      .emptyList {
+        @include spacedText;
+      }
+    }
+
+    .offerDetails {
+      margin-top: 20px;
+    }
+  }
+
+  &.inviteModal {
+    .searchNameWrapper {
+      text-align: center;
+      margin-bottom: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .label {
+        @include spacedText;
+        text-align: left;
+      }
+    }
+
+    .playerListWrapper {
+      padding: 5px;
+
+      .playerWrapper {
+        padding: 10px;
+        border-top: 1px solid;
+        .image {
+          img {
+            height: 50px;
+          }
+        }
+        .name {
+          @include spacedText;
+          padding: 10px;
+          font-weight: 200;
+        }
+        .invite {
+          padding: 10px;
+
+          button {
+            height: 30px;
+            font-weight: 300;
+          }
+
+          .ineligible {
+            @include spacedText;
+            font-weight: 200;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .totalPlayers {
+      @include spacedText;
+      font-weight: 200;
+      padding-left: 10px;
+    }
+  }
+
+  &.manageMemberModal {
+    div {
+      @include spacedText;
+
+      label {
+        @include spacedText;
+        color: white;
+      }
+    }
+
+    &.mobile {
+      font-size: 14px;
+    }
+
+    .row {
+      margin-bottom: 10px;
+
+      .memberRoleSelect {
+        @include spacedText;
+        color: white;
+      }
+    }
+  }
+
+  &.mobile {
+    font-size: 10px;
+
+    button {
+      font-size: 10px;
+    }
+  }
+}
+
+li.roleOption {
+  color: white;
+  font-family: 'Poppins';
+
+  span {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 200;
+  }
+}

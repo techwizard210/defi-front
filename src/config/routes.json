@@ -1,0 +1,42 @@
+{
+  "/": {
+    "path": "/",
+    "title": "HiFiGamingSociety | Coming Soon"
+  },
+  "signin": {
+    "path": "/signin",
+    "title": "HiFiGamingSociety | Sign in"
+  },
+  "dashboard": {
+    "path": "/dashboard",
+    "title": "HiFiGamingSociety | Dashboard"
+  },
+  "stake-rewards": {
+    "path": "/stake-rewards",
+    "title": "HiFiGamingSociety | Dashboard"
+  },
+  "play-game": {
+    "path": "/play-game"
+  },
+  "competitions": {
+    "path": "/competitions"
+  },
+  "browse-games": {
+    "path": "/browse-games"
+  },
+  "comingsoon": {
+    "path": "/comingsoon"
+  },
+  "guilds": {
+    "path": "/comingsoon"
+  },
+  "ranking": {
+    "path": "/ranking"
+  },
+  "terms-service": {
+    "path": "/terms-service"
+  },
+  "game-farms": {
+    "path": "/game-farms"
+  }
+}

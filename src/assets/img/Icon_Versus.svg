@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="38px" viewBox="0 0 50 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>66AD75FF-8436-43A5-AA91-D8412568EE0B@1.00x</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.11380912%" x2="50%" y2="115.709777%" id="linearGradient-1">
+            <stop stop-color="#E6E1FF" offset="0%"></stop>
+            <stop stop-color="#6647AB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.000456,15.3248682 C15.9943404,15.3248682 18.7688628,15.9879634 21.0201664,17.2441605 C23.5477035,18.6536064 25.244915,20.7313048 25.9257495,23.2525404 C26.1086726,23.9123173 25.9495157,24.6117287 25.4935252,25.1519399 C25.0647837,25.6487353 21.0201664,28 12.9160295,28 C4.9766834,28 0.932528099,25.6473986 0.503324549,25.148256 C0.0482192574,24.6073564 -0.109194673,23.9074425 0.075974975,23.2481197 C0.760059274,20.7570919 2.45483344,18.6911818 4.9766834,17.2743682 C7.21498773,16.0174343 10.0642557,15.3248682 13.000456,15.3248682 Z M13.000456,3.62376795e-13 C14.9365283,3.62376795e-13 16.6873616,0.667515892 17.9320376,1.88024344 C19.1227496,3.04031114 19.734492,4.59581139 19.6753878,6.28551229 L19.6593098,6.56832691 C19.5236304,8.27100817 18.7737375,9.86685743 17.5469355,11.0626392 C16.2860105,12.290839 14.6716691,12.9671961 13.000456,12.9671961 C11.3300554,12.9671961 9.71490149,12.290839 8.4507267,11.063376 C7.22148734,9.86612065 6.470782,8.26953463 6.33835238,6.56906368 C6.19698579,4.75512977 6.80713699,3.08707681 8.0558752,1.87140217 C9.3046134,0.655727532 11.050572,3.62376795e-13 13.000456,3.62376795e-13 Z" id="path-2"></path>
+        <filter x="-21.2%" y="-12.5%" width="142.3%" height="139.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="1.11380912%" x2="50%" y2="115.709777%" id="linearGradient-4">
+            <stop stop-color="#E6E1FF" offset="0%"></stop>
+            <stop stop-color="#6647AB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M29.8054955,17.8464078 C33.0699808,17.8464078 36.0952772,18.5753389 38.5500638,19.9562583 C41.3060513,21.5056419 43.1566645,23.789626 43.8990359,26.5611841 C44.0984924,27.2864674 43.9249502,28.0553203 43.4277452,28.6491667 C42.9602521,29.1952868 38.5500638,31.7799984 29.7134381,31.7799984 C21.0564977,31.7799984 16.6468133,29.1938174 16.1788163,28.6451171 C15.6825765,28.050514 15.5109348,27.2811086 15.712841,26.5563245 C16.4587559,23.8179734 18.3067115,21.546948 21.0564977,19.9894652 C23.4971102,18.6077358 26.603908,17.8464078 29.8054955,17.8464078 Z M29.8054955,1 C31.9165588,1 33.8256405,1.73379065 35.1828159,3.06692464 C36.4847564,4.34571278 37.1518852,6.06161255 37.0831841,7.92505577 L37.0662069,8.22046755 C36.9182641,10.0922006 36.1005925,11.8464948 34.7629065,13.1610006 C33.3880134,14.511143 31.6277604,15.2546527 29.8054955,15.2546527 C27.9841164,15.2546527 26.2229776,14.511143 24.8445409,13.1618105 C23.5041973,11.8456849 22.6856398,10.0905808 22.5412406,8.22127748 C22.3870966,6.22724594 23.0523961,4.39357925 24.4140009,3.05720556 C25.7756058,1.72083187 27.6793721,1 29.8054955,1 Z" id="path-5"></path>
+        <filter x="-19.4%" y="-11.4%" width="138.8%" height="135.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Challenge-page-WIP" transform="translate(-425.000000, -229.000000)">
+            <g id="BTN_Challenge-yourself-Copy" transform="translate(378.000000, 216.000000)">
+                <g id="Icon_Versus" transform="translate(50.000000, 14.000000)">
+                    <g id="Icon_Big_Single_user-Copy" opacity="0.699999988">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Icon_Big_Single_user">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

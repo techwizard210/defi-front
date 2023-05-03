@@ -1,0 +1,55 @@
+.vaultsHeading,
+.gameFarmsHeading {
+  font-family: 'arcade-interlaced';
+  text-align: center;
+  color: #ed51a3;
+  margin-bottom: 30px;
+  margin-top: 10px;
+
+  @media (min-width: $fontToggleSize) {
+    font-size: 60px;
+  }
+
+  @media (max-width: $fontToggleSizeSmallest) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $fontToggleSizeSmallest) and (max-width: $fontToggleSize) {
+    font-size: 40px;
+  }
+}
+
+.gameFarmsHeading {
+  margin-top: 60px;
+}
+
+.gameFarmsComingSoon {
+  text-align: center;
+  margin-top: 15px;
+  color: #f3ba2f;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.poweredBy {
+  text-align: right;
+  width: 80%;
+  height: 110px;
+
+  @media (max-width: $fontToggleSizeSmallest) {
+    width: 100%;
+  }
+
+  @media (min-width: $fontToggleSizeSmallest) and (max-width: $fontToggleSize) {
+    width: 100%;
+  }
+}
+
+.moonVaultImage {
+  width: 100px;
+}
+
+.moonVaultLinkWrapper {
+  width: 290px;
+  float: right;
+}

@@ -1,0 +1,2 @@
+(this["webpackJsonpHiFi-DeFi"]=this["webpackJsonpHiFi-DeFi"]||[]).push([[32],{1154:function(e,i,s){"use strict";s.r(i);var c=s(253),t=s(1);i.default=function(){return Object(t.jsxs)(t.Fragment,{children:[Object(t.jsx)("div",{className:"terms-service",children:"Terms of Service"}),Object(t.jsx)(c.a,{})]})}}}]);
+//# sourceMappingURL=32.129ac55e.chunk.js.map

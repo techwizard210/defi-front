@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'arcade-interlaced';
+  src: url('./assets/fonts/ARCADE_I.TTF') format('woff'),
+    url('./assets/fonts/ARCADE_I.TTF') format('opentype'),
+    url('./assets/fonts/ARCADE_I.TTF') format('truetype');
+}
+
+.comingSoon {
+  font-family: 'arcade-interlaced';
+  text-align: center;
+  font-size: 60px;
+  color: #4bbdfb;
+}
+
+.promo-img {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.promo-img img {
+  width: 400px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.slider-wrapper {
+  height: 100%;
+}
+
+.slider {
+  height: 100% !important;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .comingSoon {
+    font-size: 45px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .comingSoon {
+    font-size: 30px;
+  }
+
+  .promo-img img {
+    width: 300px;
+  }
+}

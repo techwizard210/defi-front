@@ -1,0 +1,188 @@
+.gameStats {
+  padding-top: 20px;
+
+  .statsWrapper {
+    //background-color: rgba(0, 0, 0, 0.24);
+    padding: 5px;
+    border-radius: 3px;
+
+    .noMoreMissions {
+      padding: 15px;
+      font-family: 'Poppins';
+      font-weight: 300;
+      border-radius: 12px;
+      color: #001226;
+      background-color: #7399c1;
+      border-color: #b8daff;
+    }
+
+    .headlinerWrapper {
+      margin-bottom: 10px;
+
+      .contentWrapper {
+        padding: 10px;
+
+        .title {
+          padding: 4px;
+          font-size: 20px;
+          color: #575863;
+        }
+
+        .total {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        .subHeadlinerWrapper {
+          margin-bottom: 10px;
+          font-size: 18px;
+          padding: 10px;
+
+          div {
+            font-family: 'Poppins';
+            text-align: center;
+          }
+        }
+
+        .breakdownWrapper {
+          max-height: 300px;
+          overflow-y: auto;
+
+          .totalSubStatWrapper {
+            padding: 5px;
+            .breakdownRow {
+              width: 100%;
+              border: 1px solid;
+              border-radius: 3px;
+              padding: 5px;
+              text-align: center;
+
+              .breakdownTitle {
+                font-family: 'Poppins';
+                font-size: 20px;
+                margin-bottom: 5px;
+              }
+
+              .value {
+                font-family: 'Poppins';
+                padding-bottom: 4px;
+              }
+            }
+
+            .rdt_Table {
+              background-color: transparent;
+
+              .rdt_TableHead {
+                background-color: transparent;
+
+                .rdt_TableHeadRow {
+                  background-color: transparent;
+
+                  .rdt_TableCol {
+                    color: white;
+
+                    .rdt_TableCol_Sortable {
+                      div {
+                        font-family: 'Poppins';
+                      }
+                    }
+                  }
+                }
+              }
+
+              .rdt_TableBody {
+                background-color: transparent;
+
+                .rdt_TableRow {
+                  background-color: transparent;
+
+                  .rdt_TableCell {
+                    color: white;
+                    font-family: 'Poppins';
+                    div {
+                      font-family: 'Poppins';
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .gamingSectionHeader {
+      padding: 20px;
+
+      span {
+        font-size: 29px;
+        font-family: 'Poppins';
+        font-weight: 600;
+      }
+    }
+
+    .gamingHistory {
+      overflow-y: auto;
+      max-height: 600px;
+
+      &.noMax {
+        overflow-y: unset;
+        max-height: none;
+      }
+
+      .game-holder {
+        width: 100%;
+      }
+    }
+
+    .gamingItemWrapper {
+      border-radius: 12px;
+      margin-bottom: 5px;
+      width: 100%;
+      border: 1px solid #efefef;
+
+      .dateRow {
+        padding-top: 10px;
+        font-family: 'Poppins';
+        color: white;
+
+        &.rewardsFor {
+          font-family: 'Poppins';
+          font-size: 20px;
+          margin-bottom: 4px;
+          height: 27px;
+        }
+
+        &.bottomBorder {
+          border-bottom: 1px solid;
+        }
+
+        &.substat {
+          font-size: 14px;
+          margin-top: 4px;
+        }
+
+        .gameItemTitle {
+          font-family: 'Poppins';
+          font-size: 16px;
+          font-weight: 400;
+          padding-left: 10px;
+        }
+
+        .title {
+          font-family: 'Poppins';
+          padding-left: 10px;
+          font-size: 13px;
+          font-weight: 200;
+        }
+
+        .date {
+          font-family: 'Poppins';
+          text-align: center;
+          font-size: 14px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
